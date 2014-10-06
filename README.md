@@ -2,9 +2,9 @@
 
 # Team Members
 
-* [name-of-a-team-member](URL to this member's github account)
-* [name-of-a-team-member](URL to this member's github account)
-* [name-of-a-team-member](URL to this member's github account)
+* [Daniel Nolan](https://github.com/dano8957)
+* [Chris Wittenberg](https://github.com/cwitty1919)
+* [Ryan Roden](https://github.com/rodenr)
 * [name-of-a-team-member](URL to this member's github account)
 * [name-of-a-team-member](URL to this member's github account)
 
