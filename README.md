@@ -125,24 +125,25 @@ While there are many tools to do this analysis, we will use the JS library Gauss
 # Part 3: Project Design Exercise
 
 ## Link to the device or devices you're interested in using
-* [device1](URL to this device)
-* [device2](URL to this device)
+* [Infrared Proximity Sensor Long Range - Sharp GP2Y0A02YK0F](https://www.sparkfun.com/products/8958)
+* [Electret Microphone Breakout](https://www.sparkfun.com/products/9964)
 
 ## What it would measure and how?
-[Response]
+* "Infrared proximity sensor made by Sharp. Part # GP2Y0A02YK0F has an analog output that varies from 2.8V at 15cm to 0.4V at 150cm with a supply voltage between 4.5 and 5.5VDC."  Senses objects up to 5 feet away.
+* "This small breakout board couples a small electret microphone with a 100x opamp to amplify the sounds of voice, door knocks, etc loud enough to be picked up by a microcontroller’s Analog to Digital converter."
 
 ## Where you'd put it in the lobby?
-[Location]
+We would put it near the projector so that there is a dialogue between individuals and the visualization.
 
 ## What problems could threaten the validity of your data?
-[Response]
+Noise (literally background noise). Longevity of the devices.
 
 ## How often to sample and when to make a data dump?
-[Response]
+You would sample when the measurements are being taken.  We would data dump whenever needed (before overflow).
 
 ## Resulting viz.
-[Describe or link to example]
+We can modify size and colors of some sort of graphic while proximity and sound measurements are being taken.  We could also use a map to identify locations within the lobby from which measurements are being collected.
 
 ## Timing trigger
-[Necessary? Why? and How?]
+Unnecessary because we would like constant collection.  The proximity sensor may serve as a trigger.
 
