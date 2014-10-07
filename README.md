@@ -18,7 +18,7 @@ What makes these two starting points different is that in option a, you have les
 (For the following set of questions we'll assume we're in situation A - you are going to design your own data collection)
 
 ## Q2: What factors go into deciding what data format to use?  Under what circumstances may you use different data types? (i.e., JSON, CSV, Key-Value Store, txt documents)
-[provide response here]
+Some factors that go into deciding a chosen data format is how large the data file actually is. A JSON file would be a more likely choice if given a very large file compared to a CSV file. Unless there is a given storage system, one should probably not use a txt document. Key-value stores are a type of NOSQL database that is dynamic and actiely changing. Other files like text and JSON files are part of the SQL database where the dataset must be completely changed before being run again. 
 
 ## Q3: Once you've chosen a format, you'll need to determine fields to capture and store.  A common approach for this involves determining what QUESTIONS you want to ask of your dataset.  For the following examples, please respond with which field(s) your may need to answer the questions needed:
 1. You're working for a company that tracks data on public transportation, you know you'll want to be able to ask "What percentage of a time is a bus/train late?"
