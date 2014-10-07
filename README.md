@@ -42,17 +42,18 @@ Some factors that go into deciding a chosen data format is how large the data fi
 
 
 ## Q5: You've now set up your database and have a website with 10,000 users, but have realized that you forgot a much needed field (say, an ID number for each user).  What do you do and how might different database designs have helped this situation?
-[Respond here]
 
 ---------------
 
 (For this section, you may need to do some online research to answer the questions.)
 
 ## Q6: What is a Baysian Classifier?  What is it used for?
-[Response]
+
+A Baysian classifier minimizes the probability of missclassification. It is used to model distributions more effectively.
 
 ## Q7: What is a simple graph you could generate to check for outliers in a dataset?
-[Response]
+
+A simple graph you can you can generate to check for outliers is a histogram. 
 
 ## Q8: What is a Null Hypothesis?
 [Response]
@@ -68,26 +69,33 @@ measuring a frequency of highest user rating and number of times played.
 take data from 9 and look at the most common genre in the top X of the list
 
 ## Q11: How do we match 2 users that we think may want to share playlists?
-[Response]
+
+We look at the most commonly listened to genres between people
 
 ## Q12: What assumptions would you have before digging into Spotify data?  How would you test them?
+
 Depending on what is the most popular song currently, it would likely effect whether it is on someones personal most popular songs.
+
 
 ----------
 
 Answer these last questions generally.
 
 ## Q12: What is a correlation and how do you find them in a data set?
-[Response]
+
+A correlation is a relation between two variables within your data. This could be something like a relationship between car accidents and not wearing your seat belt. There is a correlation between these variables since data has been shown that more deaths occur when people don't wear seat belts.  
 
 ## Q13: How can correlations help us tell a story with our data? 
-[Response]
+
+If a correlation is statistically significant, then this is strong eveidence for a relationship between to data points. This calls for further inquiry and exploration. 
 
 ## Q14: Let's think about data science as a way to tell a story about some data.  Why would I want to bring a second data set into my story?
-[Response]
+
+We can use an older data set as a control. 
 
 ## Q15: This one's just for fun.  How percent of the time do you expect to actually get the result you wanted?
-[Response]
+
+60%
 
 
 # Part 2: Analyzing Your Data
