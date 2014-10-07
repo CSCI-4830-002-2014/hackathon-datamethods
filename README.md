@@ -42,14 +42,14 @@ Some factors that go into deciding a chosen data format is how large the data fi
 
 
 ## Q5: You've now set up your database and have a website with 10,000 users, but have realized that you forgot a much needed field (say, an ID number for each user).  What do you do and how might different database designs have helped this situation?
-[Respond here]
 
 ---------------
 
 (For this section, you may need to do some online research to answer the questions.)
 
 ## Q6: What is a Baysian Classifier?  What is it used for?
-[Response]
+
+A Baysian classifier minimizes the probability of missclassification. It is used to model distributions more effectively.
 
 ## Q7: What is a simple graph you could generate to check for outliers in a dataset?
 [Response]
