@@ -12,7 +12,8 @@
 
 
 ## Q1: There are generally 2 situations you'll start from when approaching a question of data: a) You designed and collected the data yourself OR b) You have to work with a data set you've been given access to.  What do you think makes these 2 starting points different?  How might it change what analysis you'll do?
-[provide response here]
+
+What makes these two starting points different is that in option a, you have less control over what kind of data you have and how you can work with it. You can ask yourself, "What kind of data would be relevant here?" However, you may need to do more cleaning. In option b, you have to work with what you have and ask yourself, "How is this data relevant?".
 
 (For the following set of questions we'll assume we're in situation A - you are going to design your own data collection)
 
@@ -25,9 +26,9 @@
 3. You're starting a social networking website that helps friends choose what to do on a Friday night, and you need to be able to answer the question, "Who made the suggestion that led to the final decision?"
 
 ### Answers:
-1. [Field(s) here]
-2. [Field(s) here]
-3. [Field(s) here]
+1. Bus_id, Train_id,Time of Scheduled Arival, Time of Actual Arrival
+2. Teacher_id, Activity_id, Num(Students)
+3. Creator_ID (of event), Event chosen? (boolean), Num(Participant_ID's)
 
 ## Q4: Now you need to decide how you'll query your data.  What are the costs and benefits of the following options: 
 1. Store the data raw and load it into a Python or JavaScript Shell for analysis.  
