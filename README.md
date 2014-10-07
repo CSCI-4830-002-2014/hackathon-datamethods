@@ -11,7 +11,6 @@
 
 
 ## Q1: There are generally 2 situations you'll start from when approaching a question of data: a) You designed and collected the data yourself OR b) You have to work with a data set you've been given access to.  What do you think makes these 2 starting points different?  How might it change what analysis you'll do?
-[provide response here]
 
 If you receive data that you haven't collected yourself, it is important to do an initial investigation to better understand it.  Conversely, if you collect the data itself, you may have the opportunity to re-collect it if there were any problems with it.  Furthermore, if you do the collect the data itself, it may be inheritantly "cleaner" since the entire design is by a single individual and problems may be addressed early on.
 
