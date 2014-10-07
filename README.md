@@ -143,7 +143,7 @@ ABOVE: 0.9964074929432897
 BELOW: 0.00359250705671029
 
 ## Yes/No + Justification
-[Answer and any images/snippets to justify]
+YES ! Because of moonlight, it's not too dark at nights.
 
 # Part 3: Project Design Exercise
 
