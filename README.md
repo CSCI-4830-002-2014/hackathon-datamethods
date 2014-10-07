@@ -59,7 +59,8 @@ Graph the points with a line of best fit through the center. Now you can determi
 ## Q8: What is a Null Hypothesis? 
 
 A null hypothesis is the hypothesis that there is no correlation between two sets of data.
-----------
+
+------
 
 Answer the following questions using this scenario: You just got a HUGE dataset from Spotify where each entry contains these fields -> [username, song, # of times played, user rating, genre]
 
@@ -74,6 +75,7 @@ Find users that have the at least 2 common genres (based on Q10).
 
 ## Q12: What assumptions would you have before digging into Spotify data?  How would you test them?
 Pop songs are played the most, party music is commonly played, certain users contribute most to the play counts. Most commonly played songs and find users total playcounts and compare them to random users.
+
 ----------
 
 Answer these last questions generally.
