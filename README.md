@@ -2,11 +2,10 @@
 
 # Team Members
 
-* [name-of-a-team-member](URL to this member's github account)
-* [name-of-a-team-member](URL to this member's github account)
-* [name-of-a-team-member](URL to this member's github account)
-* [name-of-a-team-member](URL to this member's github account)
-* [name-of-a-team-member](URL to this member's github account)
+* [Brian Newsom](https://github.com/briannewsom)
+* [Peyman Mortazavi](https://github.com/peymanmortazavi)
+* [Adrian Chen](https://github.com/adrian-chen)
+* [Dawson Botsford](https://github.com/dawsonbotsford)
 
 # Part 1: Data Science Fundamentals
 
