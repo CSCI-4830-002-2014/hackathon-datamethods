@@ -99,28 +99,104 @@ You want to confirm that hypotheses hold up for complimenting data sets as well.
 While there are many tools to do this analysis, we will use the JS library Gauss to accomplish this task since everyone should have used it by now.
 
 ## Screenshot of Data in Gauss
-![screenshot of data in gauss](image.png?raw=true) 
+
+![screenshot of data in gauss](http://i.imgur.com/m5dJkDq.png?1)
 
 ## Most Frequent Value
-[cut and paste command used and the output it produced]
+64
 
 ## Range of data
-[cut and paste command used and the output it produced]
+gauss> set.min()
+6
+gauss> set.max()
+250
 
 ## Biggest Change
-[cut and paste command used and the related snippet from the output]
+```
+gauss> var maxchange = 0;
+gauss> for(i=0;i<set.length-1;i++){
+....... if((set[i+1]-set[i])>maxchange)
+....... maxchange=set[i+1]-set[i];
+....... console.log(maxchange);
+....... }
+```
+226
 
 ## Shape of data
-[Describe]
+Distribution:
+```
+gauss> set.distribution()
+{ '6': 2,
+  '8': 1,
+  '12': 1,
+  '13': 1,
+  '14': 1,
+  '15': 3,
+  '16': 1,
+  '17': 4,
+  '18': 1,
+  '20': 2,
+  '21': 144,
+  '22': 124,
+  '23': 109,
+  '24': 120,
+  '25': 111,
+  '26': 141,
+  '27': 124,
+  '28': 158,
+  '29': 138,
+  '30': 152,
+  '31': 142,
+  '32': 173,
+  '33': 168,
+  '34': 160,
+  '35': 176,
+  '36': 196,
+  '37': 184,
+  '38': 184,
+  '39': 217,
+  '40': 200,
+  '41': 231,
+  '42': 228,
+  '43': 273,
+  '44': 279,
+  '45': 261,
+  '46': 276,
+  '47': 287,
+  '48': 312,
+  '49': 295,
+  '50': 325,
+  '51': 305,
+  '52': 306,
+  '53': 308,
+  '54': 340,
+  '55': 347,
+  '56': 353,
+  '57': 411,
+  '58': 371,
+  '59': 391,
+  '60': 470,
+  '61': 477,
+  '62': 400,
+  '63': 463,
+  '64': 516,
+  '65': 64,
+  '73': 1,
+  '80': 1,
+  '85': 1,
+  '90': 1,
+  '102': 1,
+  '250': 1 }
+```
 
 ## Threshold
-[Value]
+Silence was the threshold, which occurred at value 6.
 
 ## Percentage above/below
-[Command and output]
+None is below the threshold of silence.
 
 ## Yes/No + Justification
-[Answer and any images/snippets to justify]
+The signal that we're looking for may not be in the data because of an apparent voltage problem (see distribution).
 
 # Part 3: Project Design Exercise
 
