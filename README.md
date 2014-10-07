@@ -2,22 +2,25 @@
 
 # Team Members
 
-* [name-of-a-team-member](URL to this member's github account)
-* [name-of-a-team-member](URL to this member's github account)
-* [name-of-a-team-member](URL to this member's github account)
-* [name-of-a-team-member](URL to this member's github account)
-* [name-of-a-team-member](URL to this member's github account)
+* [Alexia Newgord](https://github.com/alne4294)             
+* [Jake Charland](https://github.com/jakecharland)
+* [Alex Tsankov](https://github.com/antsankov)
+* [Michael Aaron](https://github.com/develra)
 
 # Part 1: Data Science Fundamentals
 
 
 ## Q1: There are generally 2 situations you'll start from when approaching a question of data: a) You designed and collected the data yourself OR b) You have to work with a data set you've been given access to.  What do you think makes these 2 starting points different?  How might it change what analysis you'll do?
-[provide response here]
 
-(For the following set of questions we'll assume we're in situation A - you are going to design your own data collection)
+If you receive data that you haven't collected yourself, it is important to do an initial investigation to better understand it. It may also be faster to get started in the initial stages. Conversely, if you collect the data itself, you may have the opportunity to re-collect it if there were any problems with it.  Furthermore, if you do the collect the data itself, it may be inheritantly "cleaner" since the entire design is by a single individual and problems may be addressed early on.
 
 ## Q2: What factors go into deciding what data format to use?  Under what circumstances may you use different data types? (i.e., JSON, CSV, Key-Value Store, txt documents)
-[provide response here]
+
+Factors to consider are:
+* End-goal use cases - For example, where is the data going to be stored
+* Relationship between data sets - JSON or NoSQL may be better for nested or hierarchical data. SQL is better and faster for relational database formats (where you can use joins, parallelization, etc. across columns).
+* Data size - Extremely large data sets may be better processed using SQL databases, while smaller datasets may only need a single .csv spreadsheet.
+* Data access - For example, if the same queries are called over and over again, a data store system that supports cacheing would be ideal
 
 ## Q3: Once you've chosen a format, you'll need to determine fields to capture and store.  A common approach for this involves determining what QUESTIONS you want to ask of your dataset.  For the following examples, please respond with which field(s) your may need to answer the questions needed:
 1. You're working for a company that tracks data on public transportation, you know you'll want to be able to ask "What percentage of a time is a bus/train late?"
@@ -25,9 +28,9 @@
 3. You're starting a social networking website that helps friends choose what to do on a Friday night, and you need to be able to answer the question, "Who made the suggestion that led to the final decision?"
 
 ### Answers:
-1. [Field(s) here]
-2. [Field(s) here]
-3. [Field(s) here]
+1. Expected arrival, actual arrival time, type of transit
+2. Student activities, classes, teacher names, teacher's students, number of activities the student is involved in
+3. Final decision, authors of suggestions, timestamp
 
 ## Q4: Now you need to decide how you'll query your data.  What are the costs and benefits of the following options: 
 1. Store the data raw and load it into a Python or JavaScript Shell for analysis.  
@@ -35,58 +38,60 @@
 3. Build a webserver and write an API that dumps and queries that data in your database.
 
 ### Answers:
-1. [Costs/Benefits]
-2. [Costs/Benefits]
-3. [Costs/Benefits]
+1. Costs: limited memory (not scalable), Benefits: low overhead to get started
+2. Costs: overhead to dump data and database management, querying and comparisons require more steps, Benefits: relatively easy to query
+3. Costs: transfer over network and hacking risks and maintaining web server/requests, Benefits: Easily accessible for many users
 
 
 ## Q5: You've now set up your database and have a website with 10,000 users, but have realized that you forgot a much needed field (say, an ID number for each user).  What do you do and how might different database designs have helped this situation?
-[Respond here]
+
+Sometimes, you can concatenate different fields to make a unique field for users.  For SQL databases, you may need to rebuild the database by adding the field when migrating the old data to a new location. Alternatively, with many NoSQL databases, you can add a new field/column and populate it.
 
 ---------------
 
 (For this section, you may need to do some online research to answer the questions.)
 
 ## Q6: What is a Baysian Classifier?  What is it used for?
-[Response]
+This minimizes the probability of misclassification by using the Machine Learning strategy where the classifier is trained to identify a particular category based on past behavior. Unlike a naive classifier (which treats every event as independent), a good Baysian Classifier continues to learn throughout time.
 
 ## Q7: What is a simple graph you could generate to check for outliers in a dataset?
-[Response]
+Histogram or Scatter plot
+
 
 ## Q8: What is a Null Hypothesis?
-[Response]
+The null hypothesis is the hypothesis that "there is no significant difference between specified populations" and that "any observed difference being due to sampling or experimental error."
 
 ----------
 
 Answer the following questions using this scenario: You just got a HUGE dataset from Spotify where each entry contains these fields -> [username, song, # of times played, user rating, genre]
 
 ## Q9: How would you figure out the most popular song?
-[Reponse]
+Depending on your definition of popular, you could find the song that was played by the most unique users or the song that was played the most number of times.
 
 ## Q10: How do you determine what genre a certain user likes the most?
-[Response]
+You would calculate the most popular genre based on the songs that he/she currently listens to.  You can also look at the distribution of genre and user rating.
 
 ## Q11: How do we match 2 users that we think may want to share playlists?
-[Response]
+Compare two users' earlier activity (genre, user rating, etc.).
 
 ## Q12: What assumptions would you have before digging into Spotify data?  How would you test them?
-[Response]
+There may be a difference between popularity of songs on Spotify and outside of Spotify.  There are no duplicate entries. Make a hypothesis and then check to see if it is true (deductive reasoning).
 
 ----------
 
 Answer these last questions generally.
 
 ## Q12: What is a correlation and how do you find them in a data set?
-[Response]
+You can look for positive/negative correlations (using covariance or regression models) or plot to identify general trends.
 
 ## Q13: How can correlations help us tell a story with our data? 
-[Response]
+You can relate different fields together and possibly make inferences on the rationale behind it.  These correlations can help justify a hypthosesis.
 
 ## Q14: Let's think about data science as a way to tell a story about some data.  Why would I want to bring a second data set into my story?
-[Response]
+You want to confirm that hypotheses hold up for complimenting data sets as well.  This may help conclusions to be generalized and add complexity to the theory.
 
 ## Q15: This one's just for fun.  How percent of the time do you expect to actually get the result you wanted?
-[Response]
+65.666662%.  It depends on the circumstances and what stage of the process you are in.
 
 
 # Part 2: Analyzing Your Data
@@ -94,50 +99,127 @@ Answer these last questions generally.
 While there are many tools to do this analysis, we will use the JS library Gauss to accomplish this task since everyone should have used it by now.
 
 ## Screenshot of Data in Gauss
-![screenshot of data in gauss](image.png?raw=true) 
+
+![screenshot of data in gauss](http://i.imgur.com/m5dJkDq.png?1)
 
 ## Most Frequent Value
-[cut and paste command used and the output it produced]
+64
 
 ## Range of data
-[cut and paste command used and the output it produced]
+gauss> set.min()
+6
+gauss> set.max()
+250
 
 ## Biggest Change
-[cut and paste command used and the related snippet from the output]
+```
+gauss> var maxchange = 0;
+gauss> for(i=0;i<set.length-1;i++){
+....... if((set[i+1]-set[i])>maxchange)
+....... maxchange=set[i+1]-set[i];
+....... console.log(maxchange);
+....... }
+```
+226
 
 ## Shape of data
-[Describe]
+Distribution:
+```
+gauss> set.distribution()
+{ '6': 2,
+  '8': 1,
+  '12': 1,
+  '13': 1,
+  '14': 1,
+  '15': 3,
+  '16': 1,
+  '17': 4,
+  '18': 1,
+  '20': 2,
+  '21': 144,
+  '22': 124,
+  '23': 109,
+  '24': 120,
+  '25': 111,
+  '26': 141,
+  '27': 124,
+  '28': 158,
+  '29': 138,
+  '30': 152,
+  '31': 142,
+  '32': 173,
+  '33': 168,
+  '34': 160,
+  '35': 176,
+  '36': 196,
+  '37': 184,
+  '38': 184,
+  '39': 217,
+  '40': 200,
+  '41': 231,
+  '42': 228,
+  '43': 273,
+  '44': 279,
+  '45': 261,
+  '46': 276,
+  '47': 287,
+  '48': 312,
+  '49': 295,
+  '50': 325,
+  '51': 305,
+  '52': 306,
+  '53': 308,
+  '54': 340,
+  '55': 347,
+  '56': 353,
+  '57': 411,
+  '58': 371,
+  '59': 391,
+  '60': 470,
+  '61': 477,
+  '62': 400,
+  '63': 463,
+  '64': 516,
+  '65': 64,
+  '73': 1,
+  '80': 1,
+  '85': 1,
+  '90': 1,
+  '102': 1,
+  '250': 1 }
+```
 
 ## Threshold
-[Value]
+Silence was the threshold, which occurred at value 6.
 
 ## Percentage above/below
-[Command and output]
+None is below the threshold of silence.
 
 ## Yes/No + Justification
-[Answer and any images/snippets to justify]
+The signal that we're looking for may not be in the data because of an apparent voltage problem (see distribution).
 
 # Part 3: Project Design Exercise
 
 ## Link to the device or devices you're interested in using
-* [device1](URL to this device)
-* [device2](URL to this device)
+* [Infrared Proximity Sensor Long Range - Sharp GP2Y0A02YK0F](https://www.sparkfun.com/products/8958)
+* [Electret Microphone Breakout](https://www.sparkfun.com/products/9964)
 
 ## What it would measure and how?
-[Response]
+* "Infrared proximity sensor made by Sharp. Part # GP2Y0A02YK0F has an analog output that varies from 2.8V at 15cm to 0.4V at 150cm with a supply voltage between 4.5 and 5.5VDC."  Senses objects up to 5 feet away.
+* "This small breakout board couples a small electret microphone with a 100x opamp to amplify the sounds of voice, door knocks, etc loud enough to be picked up by a microcontroller’s Analog to Digital converter."
 
 ## Where you'd put it in the lobby?
-[Location]
+We would put it near the projector so that there is a dialogue between individuals and the visualization.
 
 ## What problems could threaten the validity of your data?
-[Response]
+Noise (literally background noise). Longevity of the devices.
 
 ## How often to sample and when to make a data dump?
-[Response]
+You would sample when the measurements are being taken.  We would data dump whenever needed (before overflow).
 
 ## Resulting viz.
-[Describe or link to example]
+We can modify size and colors of some sort of graphic while proximity and sound measurements are being taken.  We could also use a map to identify locations within the lobby from which measurements are being collected.
 
 ## Timing trigger
-[Necessary? Why? and How?]
+Unnecessary because we would like constant collection.  The proximity sensor may serve as a trigger.
 
