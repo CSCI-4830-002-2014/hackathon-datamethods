@@ -1,68 +1,68 @@
 # Hackathon 10/6 - Data Methods and Design
--
--# Team Members
--
--* [Marc Simpson](https://github.com/masi8397)
--
--
--# Part 1: Data Science Fundamentals
--
--
--## Q1: There are generally 2 situations you'll start from when approaching a question of data: a) You designed and collected the data yourself OR b) You have to work with a data set you've been given access to.  What do you think makes these 2 starting points different?  How might it change what analysis you'll do?
--
--It depends on your starting point in where you are. If the data is given to you, then you are immediately going into cleaninc and analyzing your data. If You are designing and collecting the data yourself then there are several steps in what you want to collect and how to collect it. Analysis would change because you might be grabbing different data if you are in A, and B you are given data.
--
--(For the following set of questions we'll assume we're in situation A - you are going to design your own data collection)
--
--## Q2: What factors go into deciding what data format to use?  Under what circumstances may you use different data types? (i.e., JSON, CSV, Key-Value Store, txt documents)
--
--Whichever would give you the clearest path in what you need to do to understand the data you collect. If it is structured and consistent data then that would be a reason to use another data type.
--
--## Q3: Once you've chosen a format, you'll need to determine fields to capture and store.  A common approach for this involves determining what QUESTIONS you want to ask of your dataset.  For the following examples, please respond with which field(s) your may need to answer the questions needed:
--1. You're working for a company that tracks data on public transportation, you know you'll want to be able to ask "What percentage of a time is a bus/train late?"
--2. You're working for a school district, and you need to be able to help the principal answer the question "Which teachers are most successful at getting students interested in extra-curricular educational activities (e.g., Math Team, Quiz Bowl, Science Olypiad, Robot Building, etc)? 
--3. You're starting a social networking website that helps friends choose what to do on a Friday night, and you need to be able to answer the question, "Who made the suggestion that led to the final decision?"
--
--### Answers:
--1. actual run time, bus/train number, driver
--2. students in a specific class who participate in activities, total students, teacher name, course
--3. name of suggestor,activities, decision, # of successful/unsuccessful
--
--## Q4: Now you need to decide how you'll query your data.  What are the costs and benefits of the following options: 
--1. Store the data raw and load it into a Python or JavaScript Shell for analysis.  
--2. Periodically dump the data into a database (like Mongo) and query it.
--3. Build a webserver and write an API that dumps and queries that data in your database.
--
--### Answers:
--1. Cost: data is dirty, needs to be parsed, write program. Benefit: efficient, no fear of corruption
--2. Cost: time consuming, how to load the data. Benefits: collaboration, more benefit storing
--3. Cost: Takes time, data restricted to cleaning data. Benefits: automated, perminant storage
--
--
--## Q5: You've now set up your database and have a website with 10,000 users, but have realized that you forgot a much needed field (say, an ID number for each user).  What do you do and how might different database designs have helped this situation?
--
--Store the data using an identifier. Assign values to specific fields. 
--
+
+# Team Members
+
+* [Marc Simpson](https://github.com/masi8397)
+
+
+# Part 1: Data Science Fundamentals
+
+
+## Q1: There are generally 2 situations you'll start from when approaching a question of data: a) You designed and collected the data yourself OR b) You have to work with a data set you've been given access to.  What do you think makes these 2 starting points different?  How might it change what analysis you'll do?
+
+It depends on your starting point in where you are. If the data is given to you, then you are immediately going into cleaninc and analyzing your data. If You are designing and collecting the data yourself then there are several steps in what you want to collect and how to collect it. Analysis would change because you might be grabbing different data if you are in A, and B you are given data.
+
+(For the following set of questions we'll assume we're in situation A - you are going to design your own data collection)
+
+## Q2: What factors go into deciding what data format to use?  Under what circumstances may you use different data types? (i.e., JSON, CSV, Key-Value Store, txt documents)
+
+Whichever would give you the clearest path in what you need to do to understand the data you collect. If it is structured and consistent data then that would be a reason to use another data type.
+
+## Q3: Once you've chosen a format, you'll need to determine fields to capture and store.  A common approach for this involves determining what QUESTIONS you want to ask of your dataset.  For the following examples, please respond with which field(s) your may need to answer the questions needed:
+1. You're working for a company that tracks data on public transportation, you know you'll want to be able to ask "What percentage of a time is a bus/train late?"
+2. You're working for a school district, and you need to be able to help the principal answer the question "Which teachers are most successful at getting students interested in extra-curricular educational activities (e.g., Math Team, Quiz Bowl, Science Olypiad, Robot Building, etc)? 
+3. You're starting a social networking website that helps friends choose what to do on a Friday night, and you need to be able to answer the question, "Who made the suggestion that led to the final decision?"
+
+### Answers:
+1. actual run time, bus/train number, driver
+2. students in a specific class who participate in activities, total students, teacher name, course
+3. name of suggestor,activities, decision, # of successful/unsuccessful
+
+## Q4: Now you need to decide how you'll query your data.  What are the costs and benefits of the following options: 
+1. Store the data raw and load it into a Python or JavaScript Shell for analysis.  
+2. Periodically dump the data into a database (like Mongo) and query it.
+3. Build a webserver and write an API that dumps and queries that data in your database.
+
+### Answers:
+1. Cost: data is dirty, needs to be parsed, write program. Benefit: efficient, no fear of corruption
+2. Cost: time consuming, how to load the data. Benefits: collaboration, more benefit storing
+3. Cost: Takes time, data restricted to cleaning data. Benefits: automated, perminant storage
+
+
+## Q5: You've now set up your database and have a website with 10,000 users, but have realized that you forgot a much needed field (say, an ID number for each user).  What do you do and how might different database designs have helped this situation?
+
+Store the data using an identifier. Assign values to specific fields. 
+
 ----------------
--
--(For this section, you may need to do some online research to answer the questions.)
--
--## Q6: What is a Baysian Classifier?  What is it used for?
--
--A simple probabilistic classifier based on applying Bayes' theorem (from Bayesian statistics) with strong (naive) independence assumptions.
--
--## Q7: What is a simple graph you could generate to check for outliers in a dataset?
--
--Scatter plot
--
--## Q8: What is a Null Hypothesis?
--
--Statement you want to prove wrong.
--
+
+(For this section, you may need to do some online research to answer the questions.)
+
+## Q6: What is a Baysian Classifier?  What is it used for?
+
+A simple probabilistic classifier based on applying Bayes' theorem (from Bayesian statistics) with strong (naive) independence assumptions.
+
+## Q7: What is a simple graph you could generate to check for outliers in a dataset?
+
+Scatter plot
+
+## Q8: What is a Null Hypothesis?
+
+Statement you want to prove wrong.
+
 -----------
--
--Answer the following questions using this scenario: You just got a HUGE dataset from Spotify where each entry contains these fields -> [username, song, # of times played, user rating, genre]
--
+
+Answer the following questions using this scenario: You just got a HUGE dataset from Spotify where each entry contains these fields -> [username, song, # of times played, user rating, genre]
+
 -## Q9: How would you figure out the most popular song?
 -
 -number of times played, merge dupliates.
