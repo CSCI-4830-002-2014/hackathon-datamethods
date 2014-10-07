@@ -43,6 +43,8 @@ Some factors that go into deciding a chosen data format is how large the data fi
 
 ## Q5: You've now set up your database and have a website with 10,000 users, but have realized that you forgot a much needed field (say, an ID number for each user).  What do you do and how might different database designs have helped this situation?
 
+You can create code to itterate through your records and add ids. This is easy to do with a MongoDB, but you would have to update the schema and re-migrate records for an SQL database. 
+
 ---------------
 
 (For this section, you may need to do some online research to answer the questions.)
