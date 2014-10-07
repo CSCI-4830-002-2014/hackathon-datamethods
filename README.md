@@ -58,10 +58,9 @@ A Baysian classifier minimizes the probability of missclassification. It is used
 A simple graph you can you can generate to check for outliers is a histogram. 
 
 ## Q8: What is a Null Hypothesis?
-[Response]
+ A general statement or default position where there is no relationship between two measured phenomena (or variables/datasets).
 
-----------
-
+---------
 Answer the following questions using this scenario: You just got a HUGE dataset from Spotify where each entry contains these fields -> [username, song, # of times played, user rating, genre]
 
 ## Q9: How would you figure out the most popular song?
@@ -69,6 +68,8 @@ measuring a frequency of highest user rating and number of times played.
 
 ## Q10: How do you determine what genre a certain user likes the most?
 take data from 9 and look at the most common genre in the top X of the list
+You could plot the dataset into Tableau and create a graph relating to Songs vs. # of times played. Then, you could incorporate the user rating to see which song is rated the highest. 
+
 
 ## Q11: How do we match 2 users that we think may want to share playlists?
 
