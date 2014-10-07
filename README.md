@@ -36,9 +36,9 @@ Some factors that go into deciding a chosen data format is how large the data fi
 3. Build a webserver and write an API that dumps and queries that data in your database.
 
 ### Answers:
-1.cost: only as useful as how often you analyse the data, benefit: less data cleaning
-2.cost: data is not updated live, benefit: automation from periodic dumps
-3.benefit: a public api allows for a diverse possibilities of analysis, such as different languages can work for whoever wants to analyze
+1. cost: only as useful as how often you analyse the data, benefit: less data cleaning
+2. cost: data is not updated live, benefit: automation from periodic dumps
+3. benefit: a public api allows for a diverse possibilities of analysis, such as different languages can work for whoever wants to analyze
 
 
 ## Q5: You've now set up your database and have a website with 10,000 users, but have realized that you forgot a much needed field (say, an ID number for each user).  What do you do and how might different database designs have helped this situation?
@@ -58,17 +58,18 @@ A Baysian classifier minimizes the probability of missclassification. It is used
 A simple graph you can you can generate to check for outliers is a histogram. 
 
 ## Q8: What is a Null Hypothesis?
-[Response]
+ A general statement or default position where there is no relationship between two measured phenomena (or variables/datasets).
 
-----------
-
+---------
 Answer the following questions using this scenario: You just got a HUGE dataset from Spotify where each entry contains these fields -> [username, song, # of times played, user rating, genre]
 
 ## Q9: How would you figure out the most popular song?
-
+measuring a frequency of highest user rating and number of times played.
 
 ## Q10: How do you determine what genre a certain user likes the most?
-[Response]
+take data from 9 and look at the most common genre in the top X of the list
+You could plot the dataset into Tableau and create a graph relating to Songs vs. # of times played. Then, you could incorporate the user rating to see which song is rated the highest. 
+
 
 ## Q11: How do we match 2 users that we think may want to share playlists?
 
@@ -76,7 +77,8 @@ We look at the most commonly listened to genres between people
 
 ## Q12: What assumptions would you have before digging into Spotify data?  How would you test them?
 
-A correlation is a relation between two variables within your data. This could be something like a relationship between car accidents and not wearing your seat belt. There is a correlation between these variables since data has been shown that more deaths occur when people don't wear seat belts.  
+Depending on what is the most popular song currently, it would likely effect whether it is on someones personal most popular songs.
+
 
 ----------
 
@@ -84,6 +86,7 @@ Answer these last questions generally.
 
 ## Q12: What is a correlation and how do you find them in a data set?
 
+A correlation is a relation between two variables within your data. This could be something like a relationship between car accidents and not wearing your seat belt. There is a correlation between these variables since data has been shown that more deaths occur when people don't wear seat belts.  
 
 ## Q13: How can correlations help us tell a story with our data? 
 
