@@ -36,9 +36,9 @@ Some factors that go into deciding a chosen data format is how large the data fi
 3. Build a webserver and write an API that dumps and queries that data in your database.
 
 ### Answers:
-1.cost: only as useful as how often you analyse the data, benefit: less data cleaning
-2.cost: data is not updated live, benefit: automation from periodic dumps
-3.benefit: a public api allows for a diverse possibilities of analysis, such as different languages can work for whoever wants to analyze
+1. cost: only as useful as how often you analyse the data, benefit: less data cleaning
+2. cost: data is not updated live, benefit: automation from periodic dumps
+3. benefit: a public api allows for a diverse possibilities of analysis, such as different languages can work for whoever wants to analyze
 
 
 ## Q5: You've now set up your database and have a website with 10,000 users, but have realized that you forgot a much needed field (say, an ID number for each user).  What do you do and how might different database designs have helped this situation?
