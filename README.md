@@ -102,16 +102,33 @@ While there are many tools to do this analysis, we will use the JS library Gauss
 ![screenshot of data in gauss](image.png?raw=true) 
 
 ## Most Frequent Value
-[cut and paste command used and the output it produced]
+set.distribution()
+
+{ '0': 2,
+'1': 8,
+'2': 2,
+'3': 2,
+'4': 3,
+'5': 4,
+'6': 4,
+'7': 22,
+'8': 121,
+'9': 3729 }
 
 ## Range of data
-[cut and paste command used and the output it produced]
+set.min(), set.max()
+[0,9]
 
 ## Biggest Change
-[cut and paste command used and the related snippet from the output]
+for (var i = 0; i < set.length; i++) {
+    var currentChange = set[i] - set[i-1];
+    if(currentChange > biggestChange) { biggestChange = currentChange; }
+}
+
+Biggest Change : 4
 
 ## Shape of data
-[Describe]
+Flat line !
 
 ## Threshold
 [Value]
@@ -125,24 +142,24 @@ While there are many tools to do this analysis, we will use the JS library Gauss
 # Part 3: Project Design Exercise
 
 ## Link to the device or devices you're interested in using
-* [device1](URL to this device)
-* [device2](URL to this device)
+* [IR Distance sensor (x2 per doorway)](http://www.amazon.com/OSEPP-Proximity-Sensor-Arduino-Compatible/dp/B007OCGLVY)
+* [Raspberry Pi](http://www.amazon.com/Raspberry-Pi-Model-512MB-Computer/dp/B00LPESRUK/ref=sr_1_1?s=electronics&ie=UTF8&qid=1412645804&sr=1-1&keywords=raspberry+pi)
 
 ## What it would measure and how?
-[Response]
+[The amount of people walking in the door]
 
 ## Where you'd put it in the lobby?
-[Location]
+[At the doorways]
 
 ## What problems could threaten the validity of your data?
-[Response]
+[People walking in groups would be difficult/impossible to differentiate, multiple entrances causes issues if we didn't have one on every entrance.]
 
 ## How often to sample and when to make a data dump?
-[Response]
+[Sample 10 times a second data dump immediatly. d3 and javascript can handle it]
 
 ## Resulting viz.
 [Describe or link to example]
 
 ## Timing trigger
-[Necessary? Why? and How?]
+[Leave the hardware always listening. So trigger would be every time people enter.]
 
