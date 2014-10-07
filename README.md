@@ -131,10 +131,16 @@ Biggest Change : 4
 Flat line !
 
 ## Threshold
-[Value]
+3
 
 ## Percentage above/below
-[Command and output]
+for ( var i = 0; i < set.length; i++) {
+    if(set[i] > 3) { aboveCount++; } else { belowCount++;  }}
+var abovePerc = aboveCount/set.length;
+var belowPerc = belowCount/set.length;
+
+ABOVE: 0.9964074929432897
+BELOW: 0.00359250705671029
 
 ## Yes/No + Justification
 [Answer and any images/snippets to justify]
