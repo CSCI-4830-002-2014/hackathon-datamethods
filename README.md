@@ -62,16 +62,16 @@ Some factors that go into deciding a chosen data format is how large the data fi
 Answer the following questions using this scenario: You just got a HUGE dataset from Spotify where each entry contains these fields -> [username, song, # of times played, user rating, genre]
 
 ## Q9: How would you figure out the most popular song?
-[Reponse]
+measuring a frequency of highest user rating and number of times played.
 
 ## Q10: How do you determine what genre a certain user likes the most?
-[Response]
+take data from 9 and look at the most common genre in the top X of the list
 
 ## Q11: How do we match 2 users that we think may want to share playlists?
 [Response]
 
 ## Q12: What assumptions would you have before digging into Spotify data?  How would you test them?
-[Response]
+Depending on what is the most popular song currently, it would likely effect whether it is on someones personal most popular songs.
 
 ----------
 
