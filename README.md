@@ -51,46 +51,47 @@ If a NoSQL is used, we can simply just start using the new structure since NoSQL
 (For this section, you may need to do some online research to answer the questions.)
 
 ## Q6: What is a Baysian Classifier?  What is it used for?
-[Response]
+Bayesian Classifiers are essentially a probability function that allows us to predict the likeliness of something based upon some certain quality or class of qualities.  This means that given some data we can predict it's other contents based on a certain subset.  This is common and helpful in machine learning and training algorithms.
 
 ## Q7: What is a simple graph you could generate to check for outliers in a dataset?
-[Response]
+Graph the points with a line of best fit through the center. Now you can determine the outliers by removing those farthest from the line.
 
-## Q8: What is a Null Hypothesis?
-[Response]
+## Q8: What is a Null Hypothesis? 
 
+A null hypothesis is the hypothesis that there is no correlation between two sets of data.
 ----------
 
 Answer the following questions using this scenario: You just got a HUGE dataset from Spotify where each entry contains these fields -> [username, song, # of times played, user rating, genre]
 
 ## Q9: How would you figure out the most popular song?
-[Reponse]
+For each username, add # of times played into a running sum across all users.
 
 ## Q10: How do you determine what genre a certain user likes the most?
-[Response]
+Sum # of times played for each genre of music and find the largest sum. User rating can also be added into this function for additional complexity.
 
 ## Q11: How do we match 2 users that we think may want to share playlists?
-[Response]
+Find users that have the at least 2 common genres (based on Q10).  
 
 ## Q12: What assumptions would you have before digging into Spotify data?  How would you test them?
-[Response]
-
+Pop songs are played the most, party music is commonly played, certain users contribute most to the play counts. Most commonly played songs and find users total playcounts and compare them to random users.
 ----------
 
 Answer these last questions generally.
 
 ## Q12: What is a correlation and how do you find them in a data set?
-[Response]
+We can determine correlation by plotting both data sets and seeing if they increase or decrease together.
 
 ## Q13: How can correlations help us tell a story with our data? 
-[Response]
+They help us define relationships between certain elements of our data and predict future data.
 
 ## Q14: Let's think about data science as a way to tell a story about some data.  Why would I want to bring a second data set into my story?
-[Response]
+To find correlations/connections between distinct data.  Ensure that data is accurate and trustworthy.
 
 ## Q15: This one's just for fun.  How percent of the time do you expect to actually get the result you wanted?
-[Response]
+Dawson 10% - Pessimist
+Adrian 30% - Sad optimist
 
+Either way - not as often as one might expect.
 
 # Part 2: Analyzing Your Data
 
