@@ -64,12 +64,17 @@ A simple graph you can you can generate to check for outliers is a histogram.
 Answer the following questions using this scenario: You just got a HUGE dataset from Spotify where each entry contains these fields -> [username, song, # of times played, user rating, genre]
 
 ## Q9: How would you figure out the most popular song?
+<<<<<<< HEAD
 measuring a frequency of highest user rating and number of times played.
 
 ## Q10: How do you determine what genre a certain user likes the most?
 take data from 9 and look at the most common genre in the top X of the list
+=======
 You could plot the dataset into Tableau and create a graph relating to Songs vs. # of times played. Then, you could incorporate the user rating to see which song is rated the highest. 
 
+## Q10: How do you determine what genre a certain user likes the most?
+Genre vs. username. You could also the graph above to find what songs belong to each genre, but I think the initial comparison would give you what is necessary. 
+>>>>>>> ecc861a95e8f544174d27c7a50166b9d97c52da0
 
 ## Q11: How do we match 2 users that we think may want to share playlists?
 
@@ -132,8 +137,8 @@ While there are many tools to do this analysis, we will use the JS library Gauss
 # Part 3: Project Design Exercise
 
 ## Link to the device or devices you're interested in using
-* [thermal sensor](URL to this device)
-* [sound sensor](http://www.parallax.com/product/29132)
+* [device1](URL to this device)
+* [device2](URL to this device)
 
 ## What it would measure and how?
 [Response]
