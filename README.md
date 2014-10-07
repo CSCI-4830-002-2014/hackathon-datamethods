@@ -70,11 +70,11 @@ Answer the following questions using this scenario: You just got a HUGE dataset 
 
 ## Q11: How do we match 2 users that we think may want to share playlists?
 
-We loo at the most commonly listened to genres between people
+We look at the most commonly listened to genres between people
 
 ## Q12: What assumptions would you have before digging into Spotify data?  How would you test them?
 
-
+A correlation is a relation between two variables within your data. This could be something like a relationship between car accidents and not wearing your seat belt. There is a correlation between these variables since data has been shown that more deaths occur when people don't wear seat belts.  
 
 ----------
 
