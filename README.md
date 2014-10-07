@@ -52,7 +52,8 @@ Some factors that go into deciding a chosen data format is how large the data fi
 A Baysian classifier minimizes the probability of missclassification. It is used to model distributions more effectively.
 
 ## Q7: What is a simple graph you could generate to check for outliers in a dataset?
-[Response]
+
+A simple graph you can you can generate to check for outliers is a histogram. 
 
 ## Q8: What is a Null Hypothesis?
 [Response]
@@ -62,32 +63,37 @@ A Baysian classifier minimizes the probability of missclassification. It is used
 Answer the following questions using this scenario: You just got a HUGE dataset from Spotify where each entry contains these fields -> [username, song, # of times played, user rating, genre]
 
 ## Q9: How would you figure out the most popular song?
-[Reponse]
+
 
 ## Q10: How do you determine what genre a certain user likes the most?
 [Response]
 
 ## Q11: How do we match 2 users that we think may want to share playlists?
-[Response]
+
+We loo at the most commonly listened to genres between people
 
 ## Q12: What assumptions would you have before digging into Spotify data?  How would you test them?
-[Response]
+
+
 
 ----------
 
 Answer these last questions generally.
 
 ## Q12: What is a correlation and how do you find them in a data set?
-[Response]
+
 
 ## Q13: How can correlations help us tell a story with our data? 
-[Response]
+
+If a correlation is statistically significant, then this is strong eveidence for a relationship between to data points. This calls for further inquiry and exploration. 
 
 ## Q14: Let's think about data science as a way to tell a story about some data.  Why would I want to bring a second data set into my story?
-[Response]
+
+We can use an older data set as a control. 
 
 ## Q15: This one's just for fun.  How percent of the time do you expect to actually get the result you wanted?
-[Response]
+
+60%
 
 
 # Part 2: Analyzing Your Data
