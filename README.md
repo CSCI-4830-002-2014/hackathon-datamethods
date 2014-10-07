@@ -129,8 +129,8 @@ While there are many tools to do this analysis, we will use the JS library Gauss
 # Part 3: Project Design Exercise
 
 ## Link to the device or devices you're interested in using
-* [device1](URL to this device)
-* [device2](URL to this device)
+* [thermal sensor](URL to this device)
+* [sound sensor](http://www.parallax.com/product/29132)
 
 ## What it would measure and how?
 [Response]
